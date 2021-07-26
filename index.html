@@ -1,43 +1,345 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>AI DJ WEB APP</title>
+    <title>CASE STUDY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .copy_right_footer {
+            position: fixed;
+            color: #6c757d;
+            bottom: 0;
+            width: 100%;
+            background-color: #f5f5f5;
+            line-height: 3;
+            text-align: center;
+            font-family: 'Special Elite', cursive;
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        }
 
-  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        ol h5 {
+            background: white;
+            padding: 13px;
+            border-radius: 20px;
+        }
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+        span {
+            color: red;
+            font-size: 16px;
+        }
 
+        li img {
+            border-radius: 20px;
+        }
+
+        .bob {
+            background: #949494;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 50px;
+            box-shadow: 5px 5px 18px grey;
+        }
+
+        b {
+            color: purple;
+        }
+
+        .bob3 {
+            text-align: center;
+            color: white;
+        }
+
+        .result {
+            box-shadow: 5px 5px 18px grey;
+            letter-spacing: 2px;
+            background: #F2BAC9;
+            border-radius: 20px;
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid grey
+        }
+    </style>
 </head>
-<body background="background.jpg">
-<center>
-  	<h3 class="btn btn-warning heading">AI DJ WEB APP
-	    <br>
-	    <span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
-        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
-  	</h3>
 
-    <div class="divSpeed">
-      <img src="disk.gif" class="divSpeedImg">
-      <br>
-      <h3 class="btn btn-danger" id="speed">Speed</h3>
+<body>
+    <div class="container">
+        <h4 style="text-align: center;font-family: 'Lexend Tera', sans-serif;">
+            <span>CASE STUDY BETWEEN GOOGLE LENS AND MOBILNET</span>
+            <br>
+            <br>
+            GOOGLE LENS <img
+                src="https://play-lh.googleusercontent.com/G5oF0mhpOcQzFTrU6TDUL0JoAjzRt38weiZKua7L61WVT1z3dPcE9gUu-W2EwtM9cZU"
+                style="width: 150px;">
+            <p>
+                <b style="color: red;">VS</b>
+            </p>
+            <br>
+
+            <p class="btn btn-primary" style="font-size: 20px;">Mobilenet</p>
+        </h4>
+        <hr>
+        <ol style="padding: 0px;">
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="pillow.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        cusion
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        pillow
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>both are right.</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="basketball.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        basketball
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        basketball
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>both are right.</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="penguien.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        penguin
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        king penguin
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>both are right</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="bottle.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        water bottle
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        water bottle
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>both are right.</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="glasses.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        reading glasses
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        hook claw
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4> google lens Is More Accurate</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="tablet.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        tablet pc
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        wallet, billfold, notecase, pocketbook33
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4> google lens Is More Accurate</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="download (1).png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        camo pencil box
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        allet, billfold, notecase, pocketbook
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result -</h4>
+                    <hr>
+                    <h4> Google Lens Is More Accurate</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="bat.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                   missile
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        cricket bat
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>mobile net Is More Accurate</h4>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="download.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        book cover
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        envelope
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google LENS Is More Accurate</h4>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="bob col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b style="color: white;">Test Image - </b><img src="ballon.png" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> -
+                    <span>
+                        punch ball
+                    </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">Output on <b>MOBILE NET</b> -
+                    <span>
+                        ball
+                    </span>
+                </h5>
+                <div class="bob3 col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>both are wrong</h4>
+                </div>
+            </div>
+            <br>
+
+
+
+        </ol>
+
+        <br>
+        <br>
+        <h4 class="result col-xs-12">
+
+            I have tested 10 images<br> <b>GOOGLE LENS</b> have predicted 8 of them more accurately. And
+            <b>MOBILENET</b>
+            was less accurately by predicting 5 image accurately.<br> So according to my case study <b>GOOGLE LENS</b> is more Accurate</h4>
+
     </div>
+    <br>
+    <br>
 
-    <div class="divVolume">
-      <img src="disk.gif" class="divVolumeImg">
-      <br>
-      <h3 class="btn btn-danger" id="volume">Volume</h3>
-    </div>
-	<br><br>
-
-  <button onclick="play()" class="btn btn-success playButton">Play</button>
-</center>
-
-<script src="main.js"></script>
+    <div class="copy_right_footer"> Developed by - Arnav </div>
 </body>
+
 </html>
